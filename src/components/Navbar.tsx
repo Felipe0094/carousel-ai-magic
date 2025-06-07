@@ -24,7 +24,7 @@ const Navbar = ({ showBack, showProfile, showSignOut }: NavbarProps) => {
             <img 
               src="/bolao-logo.png"
               alt="Bolão Futebol é pra Homem"
-              className="h-8 w-8 object-contain flex-shrink-0"
+              className="h-14 w-14 object-contain flex-shrink-0"
             />
             <div className="flex flex-col min-w-0">
               <span className="text-base sm:text-xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent truncate">
