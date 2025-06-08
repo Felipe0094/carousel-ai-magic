@@ -73,7 +73,7 @@ export const useTeams = () => {
     mutationFn: async () => {
       const { error } = await supabase
         .from('teams')
-        .update({ name: 'Espérance' })
+        .update({ name: 'Los Angeles FC' })
         .ilike('name', '%León%');
 
       if (error) {
