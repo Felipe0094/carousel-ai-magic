@@ -39,27 +39,6 @@ export type Database = {
         }
         Relationships: []
       }
-      header_content: {
-        Row: {
-          id: string
-          content: string
-          created_at: string
-          updated_at: string
-        }
-        Insert: {
-          id?: string
-          content: string
-          created_at?: string
-          updated_at?: string
-        }
-        Update: {
-          id?: string
-          content?: string
-          created_at?: string
-          updated_at?: string
-        }
-        Relationships: []
-      }
       generated_prompts: {
         Row: {
           created_at: string
@@ -100,6 +79,27 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      header_content: {
+        Row: {
+          content: string
+          created_at: string | null
+          id: string
+          updated_at: string | null
+        }
+        Insert: {
+          content: string
+          created_at?: string | null
+          id?: string
+          updated_at?: string | null
+        }
+        Update: {
+          content?: string
+          created_at?: string | null
+          id?: string
+          updated_at?: string | null
+        }
+        Relationships: []
       }
       image_projects: {
         Row: {
